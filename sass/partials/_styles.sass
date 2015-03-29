@@ -6,10 +6,15 @@ h1
   font-size: 80px
   margin: 1.6em 0px 16px
   line-height: 1
+  +breakpoint($break-mobile)
+    font-size: 36px
 
 img
   max-width: 100%
   height: auto
+
+.section
+  padding: 2em 0
 
 .section-nav,
 .section-footer,
@@ -20,18 +25,21 @@ img
 .section-header
   padding: 0 0 3em
 
-.section .container
+.section-line .container
   border-bottom: 1px solid $gray-light
 
 .section-text
   margin: 12em 0
+  +breakpoint($break-tablet)
+    margin: 2em 0
 
 .section-map,
 .section-featured
-  .container
-    padding: 4em 0
-    h2
-      margin-bottom: 2em
+  h2
+    margin-bottom: 1em
+
+.section-featured-logos li
+  margin-bottom: 1em
 
 .section-header
   background: url("../images/bg-header.png") center center no-repeat
@@ -39,13 +47,19 @@ img
 .section-map-cities
   margin: 1em 0
 
+.section-map-gyms
+  margin-bottom: 3em
+
 .section-footer
-  background: whitesmoke
   color: $gray
   font-size: 12px
+  margin-top: 2em
+  background: whitesmoke
 
 .img-graph
   background: url("../images/bg-graph.png") center bottom no-repeat
+  +breakpoint($break-tablet)
+    padding-bottom: 10em
 
 .img-schedule
   margin: 4em 0 0
@@ -53,10 +67,14 @@ img
 .img-nocommit
   position: relative
   top: 150px
+  +breakpoint($break-tablet)
+    top: auto
 
 .img-unlimited
   position: relative
   top: 50px
+  +breakpoint($break-tablet)
+    top: auto
 
 .header-details
   display: block
