@@ -156,16 +156,51 @@ body.not-front
   width: 100%
 
 .caption-categories
-  background: $white-dark
-  font-weight: bold
   margin-top: 10px
+  margin-bottom: -1px
+  font-weight: bold
+  border: 1px solid $gray-light
+  background: $white-dark
+
+.caption-padding
+  padding: 1.5em
 
 .thumbnail-img
   height: 200px
   width: 100%
   overflow: hidden
 
+.thumbnail-overflow
+  position: relative
+  height: 192px
+  overflow: hidden
+  img
+    position: absolute
+    top: 0
+    left: 0
+    width: auto
+    height: 100%
+
 // Classes
 
 .form-inline .form-control.form-control-time
   width: 44%
+
+// Studio Details
+
+.schedule-day-options
+  padding: 1em 0
+  margin: 0
+  font-size: 14px
+  text-transform: uppercase
+  background: $white-dark
+  border: 1px solid $gray-light
+  border-right: none
+  border-left: none
+
+.schedule-table
+  th
+    text-transform: uppercase
+    font-size: 14px
+  tbody > tr > td
+    vertical-align: middle
