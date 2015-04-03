@@ -1,0 +1,68 @@
+// Taken from http://daneden.github.io/animate.css/
+
+.animated {
+  @include animation-duration(1s);
+  @include animation-fill-mode(both);
+}
+
+.animated.animated-long {
+  @include animation-duration(3s);
+}
+
+.animated.infinite {
+  @include animation-iteration-count(infinite);
+}
+
+@include keyframes(animatedBackground) {
+	from { background-position: 0 0; }
+	to { background-position: 0 -552px; }
+}
+
+@include keyframes(pulse) {
+  0% {
+    @include transform(scale3d(1, 1, 1));
+  }
+
+  50% {
+    @include transform(scale3d(1.05, 1.05, 1.05));
+  }
+
+  100% {
+    @include transform(scale3d(1, 1, 1));
+  }
+}
+
+.pulse {
+  @include animation-name(pulse);
+}
+
+@keyframes swing {
+  15% {
+    @include transform(rotate3d(0, 0, 1, 15deg));
+  }
+
+  30% {
+    @include transform(rotate3d(0, 0, 1, -10deg));
+  }
+
+  45% {
+    @include transform(rotate3d(0, 0, 1, 5deg));
+  }
+
+  60% {
+    @include transform(rotate3d(0, 0, 1, -5deg));
+  }
+
+  70% {
+    @include transform(rotate3d(0, 0, 1, 0deg));
+  }
+
+  100% {
+    @include transform(rotate3d(0, 0, 1, 0deg));
+  }
+}
+
+.swing {
+  @include transform-origin(top, center);
+  @include animation-name(swing);
+}

@@ -3,7 +3,6 @@
  * ==========================================================================
 
 img
-  max-width: 100%
   height: auto
 
 a
@@ -17,6 +16,7 @@ body.not-front
   background: $white-dark
 
 .section
+  position: relative
   padding: 2em 0
 
 .section-nav,
@@ -58,14 +58,33 @@ body.not-front
   margin-bottom: 1em
 
 .section-front-header
-  padding: 0 0 3em
-  background: url("../images/bg-header.png") center center no-repeat
+  margin: 5em 0 9em
   h1
     font-size: 80px
     margin: 1.6em 0px 16px
     line-height: 1
     +breakpoint($break-mobile)
       font-size: 36px
+
+.img-front-header
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  margin: 0 auto
+  width: 1170px
+  height: 100%
+  background-image: url("../images/bg-header.png")
+  background-position: 0 0
+  background-repeat: repeat-y
+  +animation(animatedBackground 10s linear infinite)
+
+.gradient-overlay
+  position: absolute
+  top: 0
+  width: 100%
+  height: 100%
+  +background-image(linear-gradient(white, transparent, white))
 
 .section-map-cities
   margin: 1em 0
@@ -79,13 +98,22 @@ body.not-front
   margin-top: 2em
   background: $white-darker
 
-.img-graph
-  background: url("../images/bg-graph.png") center bottom no-repeat
+.section-schedule .row
+  position: relative
   +breakpoint($break-tablet)
     padding-bottom: 10em
 
+.img-graph
+  background: url("../images/bg-graph.png") center bottom no-repeat
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
 .img-schedule
   margin: 4em 0 0
+  text-align: center
 
 .img-nocommit
   position: relative
@@ -95,9 +123,17 @@ body.not-front
 
 .img-unlimited
   position: relative
-  top: 50px
+  top: 58px
+  display: block
+  margin: 0 auto
+  max-width: 520px
   +breakpoint($break-tablet)
     top: auto
+
+.img-unlimited-icon
+  position: absolute
+  top: 155px
+  left: 195px
 
 .header-details
   display: block

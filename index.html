@@ -11,8 +11,8 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <style> [data-sr] { visibility: hidden; } </style>
   <link rel="stylesheet" href="css/main.css">
-  <script src="scripts/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body class="front">
   <!--[if lt IE 8]>
@@ -28,7 +28,9 @@
     </div>
   </div>
 
-  <div class="section section-front-header">
+  <div class="section section-front-header " data-sr='wait 0.25s, reset'>
+    <div class="img-front-header"></div>
+    <div class="gradient-overlay"></div>
     <div class="container text-center">
       <div class="row">
         <div class="col-md-12"><h1>Fitness Freedom</h1></div>
@@ -48,23 +50,24 @@
   <div class="section section-unlimited section-line">
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-5" data-sr="enter left, ease-in-out 100px, reset">
           <div class="section-text">
             <h2>One Pass,<br> Unlimited Access</h2>
             <p>TrimPass's one pass is your personal ticket to the best fitness classes in your city. You can reserve classes via our website or app for only one low price a month.</p>
           </div>
         </div>
-        <div class="col-md-7"><div class="img-unlimited text-center"><img src="images/unlimited.png" alt="" height="469"></div></div>
+        <div class="col-md-7 text-center"><div class="img-unlimited" data-sr="enter right, ease-in-out 100px, reset"><img class="img-unlimited-bg" src="images/bg-heart.png" alt="" height="469"><img class="img-unlimited-icon animated infinite pulse" src="images/bg-heart-icon.png" alt=""></div></div>
       </div>
     </div>
   </div>
 
   <div class="section section-schedule section-line">
-    <div class="container img-graph">
+    <div class="container">
       <div class="row">
-        <div class="col-md-7"><div class="img-schedule text-center"><img src="images/schedule.png" alt=""></div></div>
+        <div class="img-graph" data-sr='wait .3s, scale down 20% reset'></div>
+        <div class="col-md-7"><div class="img-schedule" data-sr="enter left, ease-in-out 100px, reset"><img class="animated animated-long infinite swing" src="images/schedule.png" alt=""></div></div>
         <div class="col-md-5">
-          <div class="section-text">
+          <div class="section-text" data-sr="enter right, ease-in-out 100px, reset">
             <h2>Top classes in your city</h2>
             <p>TrimPass's one pass is your personal ticket to the best fitness classes in your city. You can reserve classes via our website or app for only one low price a month.</p>
           </div>
@@ -77,17 +80,17 @@
     <div class="container">
       <div class="row">
         <div class="col-md-5">
-          <div class="section-text">
+          <div class="section-text" data-sr="enter left, ease-in-out 100px, reset">
             <h2>No Commitment?<br> Cancel anytime</h2>
             <p>TrimPass's one pass is your personal ticket to the best fitness classes in your city. You can reserve classes via our website or app for only one low price a month.</p>
           </div>
         </div>
-        <div class="col-md-7"><div class="img-nocommit text-center"><img src="images/nocommit.png" alt=""></div></div>
+        <div class="col-md-7"><div class="img-nocommit text-center" data-sr="enter right, ease-in-out 100px, reset"><img src="images/nocommit.png" alt=""></div></div>
       </div>
     </div>
   </div>
 
-  <div class="section-map section section-line">
+  <div class="section-map section section-line" data-sr='enter top, reset'>
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center"><h2>Fitness Classes and Gyms Near You</h2></div>
@@ -146,7 +149,7 @@
     </div>
   </div>
 
-  <div class="section section-featured">
+  <div class="section section-featured" data-sr='wait 0.2s, scale up 30%, reset'>
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -177,10 +180,10 @@
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-  <script src="scripts/plugins.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="scripts/app.js"></script>
+  <script src="js/libs/scrollReveal.min.js"></script>
+  <script>window.sr = new scrollReveal({ delay: 'always' });</script>
+  <script src="js/scripts.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
