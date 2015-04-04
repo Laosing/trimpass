@@ -2,25 +2,19 @@
  * Styles
  * ==========================================================================
 
-img
-  height: auto
-
-a
-  color: $black-light
-  @extend .animate
-  &:hover
-    color: $primary
-    text-decoration: none
-
-body.not-front
+.not-front
   background: $white-dark
+
+.front .section
+  // margin: 4em 0
 
 .section
   position: relative
-  padding: 2em 0
+  margin: 2em 0
 
 .section-nav,
 .section-footer,
+  margin: 0
   padding: 3em 0
   +breakpoint($break-mobile)
     padding: 1em 0
@@ -41,8 +35,10 @@ body.not-front
     ul
       margin: 0
 
-.section-line .container
-  border-bottom: 1px solid $gray-light
+.section-line
+  margin: 4em 0 
+  .container
+    border-bottom: 1px solid $gray-light
 
 .section-text
   margin: 12em 0
@@ -58,7 +54,7 @@ body.not-front
   margin-bottom: 1em
 
 .section-front-header
-  margin: 5em 0 9em
+  margin: 5em 0 10em
   h1
     font-size: 80px
     margin: 1.6em 0px 16px
@@ -115,11 +111,14 @@ body.not-front
   margin: 4em 0 0
   text-align: center
 
-.img-nocommit
+.img-commit
   position: relative
-  top: 150px
+  top: 133px
   +breakpoint($break-tablet)
     top: auto
+  img
+    display: block
+    margin: 2em auto 0
 
 .img-unlimited
   position: relative
@@ -146,7 +145,7 @@ body.not-front
 
 .map
   width: 100%
-  height: 600px
+  height: 450px
 
 // Logged In Page
 
