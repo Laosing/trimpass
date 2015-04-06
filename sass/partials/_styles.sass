@@ -35,10 +35,8 @@
     ul
       margin: 0
 
-.section-line
-  margin: 4em 0 
-  .container
-    border-bottom: 1px solid $gray-light
+.section-about-content
+  margin: 4em 0
 
 .section-text
   margin: 12em 0
@@ -82,6 +80,25 @@
   height: 100%
   +background-image(linear-gradient(white, transparent, white))
 
+.section-about
+  position: relative
+  margin: 120px 0
+  padding: 60px 0
+  background: $primary
+  &:before, &:after
+    position: absolute
+    left: 0
+    content: ''
+    width: 100%
+    height: 60px
+    display: block
+  &:before
+    top: -60px
+    background: url('../images/pattern-blue.png') top center repeat-x
+  &:after
+    bottom: -60px
+    background: url('../images/pattern-blue-bottom.png') top center repeat-x
+
 .section-map-cities
   margin: 1em 0
 
@@ -98,6 +115,9 @@
   position: relative
   +breakpoint($break-tablet)
     padding-bottom: 10em
+
+.cta
+  margin-top: 2em
 
 .img-graph
   background: url("../images/bg-graph.png") center bottom no-repeat
@@ -135,17 +155,12 @@
   left: 195px
 
 .header-details
-  display: block
-  margin: 0.5em auto 0
-  padding: 0.5em 0 3em
-  width: 100%
-  max-width: 580px
   color: #aaaaaa
-  border-top: 1px solid $gray-light
 
 .map
   width: 100%
   height: 450px
+  pointer-events: none
 
 // Logged In Page
 
