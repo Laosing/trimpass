@@ -10,7 +10,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <style> [data-sr-] { visibility: hidden; } </style>
+  <style> [data-sr] { visibility: hidden; } </style>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="front">
@@ -18,40 +18,49 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
-  <div class="section section-nav">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-4 col-md-4 col-xs-6 text-center"><a href="/"><img class="logo" src="images/logo.png" alt="Trimpass"></a></div>
-        <div class="col-md-4 col-xs-6 text-right"><a href="home.html" class="btn btn-default">Log In</a></div>
+  <div class="wrapper-intro">
+    <a href="#about" class="learn-more"><p>Learn More</p><span class="glyphicon glyphicon-download"></span></a>
+    <div class="section section-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-4 col-md-4 col-xs-6 text-center"><a href="/"><img class="logo" src="images/logo.png" alt="Trimpass"></a></div>
+          <div class="col-md-4 col-xs-6 text-right"><a href="home.html" class="btn btn-default">Log In</a></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="section section-front-header" data-sr='wait 0.25s, reset'>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5"><img src="images/header.png" alt=""></div>
-        <div class="col-md-7">
-          <h1>Fitness Freedom</h1>
-          <p><strong>Unlimited access to fitness classes and gyms throughout your city for one low price.</strong></p>
-          <p class="small header-details">$69/month when you sign up annally. Regularly $89/month</p>
-          <p class="text-center"><a href="#" class="cta btn btn-primary btn-lg"><strong>Get Started Today</strong></a></p>
+    <div class="section section-front-header" data-sr='wait 0.25s, reset'>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="header-images">
+              <img class="header-icon animated infinite swing" src="images/header-icon.png" alt="">
+              <img src="images/header-bg.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h1>Fitness Freedom</h1>
+            <p><strong>Unlimited access to fitness classes and gyms throughout your city for one low price.</strong></p>
+            <p class="small header-details">$69/month when you sign up annally. Regularly $89/month</p>
+            <p class="text-center"><a href="#" class="cta btn btn-primary btn-lg"><strong>Get Started Today</strong></a></p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section-about">
+  <div class="wrapper-about" id="about">
     <div class="section-unlimited section-about-content">
       <div class="container">
         <div class="row">
           <div class="col-md-5" data-sr="enter left, ease-in-out 100px, reset">
-            <div class="section-text">
-              <h2>One Pass,<br> Unlimited Access</h2>
-              <p>TrimPass's one pass is your personal ticket to the best fitness classes in your city. You can reserve classes via our website or app for only one low price a month.</p>
+            <div class="info-text">
+              <div class="info-text-small">What is Trimpass</div>
+              <h2>One Pass, Unlimited Access</h2>
+              <p>TrimPass’ one pass is your personal ticket to the best fitness classes in your city. You can reserve classes via our website or app for only one low price a month. It’s time to work out the way you want to.</p>
             </div>
           </div>
-          <div class="col-md-7 text-center"><div class="img-unlimited" data-sr="enter right, ease-in-out 100px, reset"><img class="img-unlimited-bg" src="images/bg-heart.png" alt="" height="469"><img class="img-unlimited-icon animated infinite pulse" src="images/bg-heart-icon.png" alt=""></div></div>
+          <div class="col-md-7 text-center"><div class="img-unlimited" data-sr="enter right, ease-in-out 100px, reset"><img class="img-unlimited-bg" src="images/unlimited-bg.png" alt="" height="469"><img class="img-unlimited-icon animated infinite pulse" src="images/unlimited-bg-icon.png" alt=""></div></div>
         </div>
       </div>
     </div>
@@ -59,12 +68,12 @@
     <div class="section-schedule section-about-content">
       <div class="container">
         <div class="row">
-          <div class="img-graph" data-sr='wait .3s, scale down 20% reset'></div>
-          <div class="col-md-7"><div class="img-schedule" data-sr="enter left, ease-in-out 100px, reset"><img class="animated infinite swing" src="images/schedule.png" alt=""></div></div>
+          <div class="col-md-7"><div class="img-schedule" data-sr="enter left, ease-in-out 100px, reset"><img class="animated infinite swing" src="images/topclasses.png" alt=""></div></div>
           <div class="col-md-5">
-            <div class="section-text" data-sr="enter right, ease-in-out 100px, reset">
+            <div class="info-text" data-sr="enter right, ease-in-out 100px, reset">
+              <div class="info-text-small">Who is involved</div>
               <h2>Top classes in your city</h2>
-              <p>TrimPass's one pass is your personal ticket to the best fitness classes in your city. You can reserve classes via our website or app for only one low price a month.</p>
+              <p>Get active in  your neighborhood with the best gym and studio partners to get you fit! Never get bored. Try new studios, experience a variety of unique classes.</p>
             </div>
           </div>
         </div>
@@ -75,18 +84,20 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5">
-            <div class="section-text" data-sr="enter left, ease-in-out 100px, reset">
+            <div class="info-text" data-sr="enter left, ease-in-out 100px, reset">
+              <div class="info-text-small">Nothing to lose</div>
               <h2>No Commitment?<br> Cancel anytime</h2>
-              <p>TrimPass's one pass is your personal ticket to the best fitness classes in your city. You can reserve classes via our website or app for only one low price a month.</p>
+              <p>Work out the way you want to, without the pressure of making a commitment. You can cancel your pass at anytime.</p>
             </div>
           </div>
-          <div class="col-md-7"><div class="img-commit text-center" data-sr="enter right, ease-in-out 100px, reset"><img class="animated infinite spin" src="images/commit-icon.png" alt=""><img src="images/commit-icon-bg.png" alt=""></div></div>
+          <div class="col-md-7"><div class="img-commit text-center" data-sr="enter right, ease-in-out 100px, reset"><img class="animated infinite spin" src="images/commitment.png" alt=""></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section-map section section-line" data-sr='enter top, reset'>
+  <div class="section-map section" data-sr='enter top, reset'>
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center"><h2>Fitness Classes and Gyms Near You</h2></div>
@@ -95,51 +106,25 @@
         <div class="col-md-12 text-center"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46695.69903169!2d-81.2475041510498!3d42.989201301672324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef20ea88d9b0b%3A0x28c7d7699a056b95!2sLondon%2C+ON!5e0!3m2!1sen!2sca!4v1427434456312" frameborder="0" style="border:0"></iframe></div>
       </div>
       <div class="row">
-        <div class="col-md-12 text-center section-map-cities">
+        <div class="col-md-12 text-center map-cities">
           <div class="btn-group" role="group">
             <a href="#" class="btn btn-primary">London</a>
             <a href="#" class="btn btn-default">Toronto</a>
           </div>
         </div>
       </div>
-      <div class="row section-map-gyms">
-        <div class="col-md-4 col-xs-4">
-          <ul class="list-unstyled">
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-          </ul>
+      <div class="row text-center map-gyms">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <a href="#"><img src="http://placehold.it/200x200"><p>YogaShack</p></a>
         </div>
-        <div class="col-md-4 col-xs-4">
-          <ul class="list-unstyled">
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-          </ul>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <a href="#"><img src="http://placehold.it/200x200"><p>YogaShack</p></a>
         </div>
-        <div class="col-md-4 col-xs-4">
-          <ul class="list-unstyled">
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-            <li>something</li>
-          </ul>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <a href="#"><img src="http://placehold.it/200x200"><p>YogaShack</p></a>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <a href="#"><img src="http://placehold.it/200x200"><p>YogaShack</p></a>
         </div>
       </div>
     </div>
@@ -154,7 +139,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <ul class="list-inline text-center section-featured-logos">
+          <ul class="list-inline text-center featured-logos">
             <li><a href="#"><img src="http://placehold.it/150x150"></a></li>
             <li><a href="#"><img src="http://placehold.it/150x150"></a></li>
             <li><a href="#"><img src="http://placehold.it/150x150"></a></li>
@@ -167,18 +152,26 @@
   <div class="section section-footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-12"></div>
+        <div class="col-md-12">
+          <ul class="list-inline text-center">
+            <li><a href="#" class="symbol" title="twitterbird"></a></li>
+            <li><a href="#" class="symbol" title="facebook"></a></li>
+            <li><a href="#" class="symbol" title="googleplus"></a></li>
+          </ul>
+        </div>
       </div>
       <div class="row">
-        <div class="col-md-12">&copy; Copyright 2015 Trimpass. All rights reserved</div>
+        <div class="col-md-12 text-center">&copy; Copyright 2015 Trimpass. All rights reserved</div>
       </div>
     </div>
   </div>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+  <script src="//cdn.jsdelivr.net/jquery.localscroll/1.4.0/jquery.localScroll.min.js"></script>
   <script src="js/libs/scrollReveal.min.js"></script>
-  <script>// window.sr = new scrollReveal({ delay: 'always' });</script>
+  <script>window.sr = new scrollReveal({ delay: 'always' });</script>
   <script src="js/scripts.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

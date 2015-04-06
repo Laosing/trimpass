@@ -2,29 +2,12 @@
   $(window).ready(function() {
     'use strict';
 
-    /**
-     * Global Variables
-     */
+    $(window).resize(function() {
+      $('.wrapper-intro').css('min-height', $(window).height());
+    });
 
-    var mobileWidth = '500px',
-        tabletWidth = '767px',
-        desktopWidth = '979px';
-
-    /**
-     * Functions
-     */
-
-    (function a() {
-
-    })();
-
-    /**
-     * Helper Functions
-     */
-
-    function b(a) {
-
-    }
+    $(window).resize();
+    $.localScroll();
 
   });
 })(jQuery, this, this.document);

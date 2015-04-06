@@ -5,9 +5,6 @@
 .not-front
   background: $white-dark
 
-.front .section
-  // margin: 4em 0
-
 .section
   position: relative
   margin: 2em 0
@@ -38,24 +35,22 @@
 .section-about-content
   margin: 4em 0
 
-.section-text
-  margin: 12em 0
-  +breakpoint($break-tablet)
-    margin: 2em 0
+.section-map
+  margin-top: 10em
 
 .section-map,
 .section-featured
   h2
     margin-bottom: 1em
 
-.section-featured-logos li
+.featured-logos li
   margin-bottom: 1em
 
 .section-front-header
   margin: 5em 0 10em
   h1
-    font-size: 80px
-    margin: 1.6em 0px 16px
+    font-size: 70px
+    margin: 1em 0px 16px
     line-height: 1
     +breakpoint($break-mobile)
       font-size: 36px
@@ -80,9 +75,34 @@
   height: 100%
   +background-image(linear-gradient(white, transparent, white))
 
-.section-about
+.info-text
+  margin: 12em 0
+  color: $white
+  +breakpoint($break-tablet)
+    margin: 2em 0
+  p
+    font-size: 16px
+
+.info-text-small
+  text-transform: uppercase
+  color: $primary-darker
+  font-size: 12px
+  font-weight: bold
+
+.header-images
   position: relative
-  margin: 120px 0
+
+.header-icon
+  position: absolute
+  top: 115px
+  left: 110px
+
+.wrapper-intro
+  position: relative
+
+.wrapper-about
+  position: relative
+  margin: 60px 0
   padding: 60px 0
   background: $primary
   &:before, &:after
@@ -99,11 +119,15 @@
     bottom: -60px
     background: url('../images/pattern-blue-bottom.png') top center repeat-x
 
-.section-map-cities
+.map-cities
   margin: 1em 0
 
-.section-map-gyms
-  margin-bottom: 3em
+.map-gyms
+  margin: 3em 0
+  img
+    margin-bottom: 5px
+  p
+    color: $gray-dark
 
 .section-footer
   color: $black-light
@@ -119,6 +143,19 @@
 .cta
   margin-top: 2em
 
+.learn-more
+  position: absolute
+  bottom: 1em
+  left: 50%
+  margin-left: -50px
+  display: block
+  width: 100px
+  text-align: center
+  p
+    color: $gray-dark
+  span
+    font-size: 30px
+
 .img-graph
   background: url("../images/bg-graph.png") center bottom no-repeat
   position: absolute
@@ -128,7 +165,7 @@
   height: 100%
 
 .img-schedule
-  margin: 4em 0 0
+  margin: 10em 0 0
   text-align: center
 
 .img-commit
@@ -145,14 +182,14 @@
   top: 58px
   display: block
   margin: 0 auto
-  max-width: 520px
+  max-width: 483px
   +breakpoint($break-tablet)
     top: auto
 
 .img-unlimited-icon
   position: absolute
   top: 155px
-  left: 195px
+  left: 142px
 
 .header-details
   color: #aaaaaa
