@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+group :assets do
+  gem 'sass'
+  gem 'compass'
+  gem 'bootstrap-sass'
+end
+
 group :development do
   gem 'guard', '~>2.2.4'
   gem 'guard-bundler', '~>2.0.0'

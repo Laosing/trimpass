@@ -1,6 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    autoprefixer-rails (5.1.8)
+      execjs
+      json
+    bootstrap-sass (3.3.4.1)
+      autoprefixer-rails (>= 5.0.0.1)
+      sass (>= 3.2.19)
     breakpoint (2.0.7)
       compass (>= 0.12.1)
       sass (>= 3.2.0)
@@ -24,6 +30,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.0.7)
+    execjs (2.4.0)
     ffi (1.9.8)
     formatador (0.2.5)
     guard (2.2.5)
@@ -46,6 +53,7 @@ GEM
       guard (>= 1.1.0)
     hitimes (1.2.2)
     http_parser.rb (0.6.0)
+    json (1.8.2)
     listen (2.10.0)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
@@ -70,9 +78,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   breakpoint (~> 2.0.2)
+  compass
   guard (~> 2.2.4)
   guard-bundler (~> 2.0.0)
   guard-compass (~> 1.0.0)
   guard-livereload (~> 2.1.0)
   guard-shell (~> 0.5.2)
+  sass
