@@ -52,9 +52,9 @@
 }
 
 .swing {
-  @include transform-origin(top, center);
-  @include animation-duration(3s);
   @include animation-name(swing);
+  @include animation-duration(3s);
+  @include transform-origin(top, center);
 }
 
 @include keyframes(spin) {

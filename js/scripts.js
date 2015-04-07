@@ -3,11 +3,16 @@
     'use strict';
 
     $(window).resize(function() {
-      $('.wrapper-intro').css('min-height', $(window).height());
+      $('.wrapper-intro').css('height', $(window).height() - 10);
     });
 
     $(window).resize();
-    $.localScroll();
+
+    $('.learn-more').click(function(event) {
+      event.preventDefault();
+      var offsetTop = $('#about').offset().top - 70;
+      $(window).scrollTo(offsetTop, 1000, 'ease-in-out');
+    });
 
   });
 })(jQuery, this, this.document);

@@ -32,9 +32,6 @@
     ul
       margin: 0
 
-.section-about-content
-  margin: 4em 0
-
 .section-map,
 .section-featured
   margin-top: 10em
@@ -75,8 +72,12 @@
   height: 100%
   +background-image(linear-gradient(white, transparent, white))
 
+.logo
+  max-width: 250px
+  width: 100%
+
 .info-text
-  margin: 12em 0
+  margin: 10em 0
   color: $white
   +breakpoint($break-tablet)
     margin: 2em 0
@@ -99,9 +100,16 @@
 
 .wrapper-intro
   position: relative
+  height: 100%
+  min-height: 700px
+  background-image: url('../images/bg-header.jpg')
+  background-repeat: no-repeat
+  background-position: 7em 11em
+  +background-size(40%)
 
 .wrapper-about
   position: relative
+  top: -60px
   margin: 60px 0
   padding: 60px 0
   background: $primary
@@ -114,10 +122,10 @@
     display: block
   &:before
     top: -60px
-    background: url('../images/pattern-blue.png') top center repeat-x
+    background: url('../images/pattern-blue.png') top left repeat-x
   &:after
     bottom: -60px
-    background: url('../images/pattern-blue-bottom.png') top center repeat-x
+    background: url('../images/pattern-blue-bottom.png') top left repeat-x
 
 .map-cities
   margin: 1em 0
@@ -147,7 +155,7 @@
 
 .learn-more
   position: absolute
-  bottom: 1em
+  bottom: 5em
   left: 50%
   margin-left: -50px
   display: block
@@ -172,16 +180,14 @@
 
 .img-commit
   position: relative
-  top: 133px
   +breakpoint($break-tablet)
     top: auto
   img
     display: block
-    margin: 2em auto 0
+    margin: 8em auto 0
 
 .img-unlimited
   position: relative
-  top: 58px
   display: block
   margin: 0 auto
   max-width: 483px
