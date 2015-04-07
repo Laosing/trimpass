@@ -30,7 +30,7 @@
   @include animation-name(pulse);
 }
 
-@keyframes keyframes(swing) {
+@include keyframes(swing) {
   15% {
     @include transform(rotate3d(0, 0, 1, 15deg));
   }
