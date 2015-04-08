@@ -35,16 +35,20 @@
 .section-map,
 .section-featured
   margin-top: 10em
+  +breakpoint($break-mobile)
+    margin-top: 0
   h2
     margin-bottom: 1em
 
 .featured-logos li
-  margin-bottom: 1em
+  margin-bottom: 3em
   a
     padding: 0 2em
 
 .section-front-header
   margin: 5em 0 10em
+  +breakpoint($break-mobile)
+    text-align: center
   h1
     font-size: 70px
     margin: 1em 0px 16px
@@ -106,6 +110,10 @@
   background-repeat: no-repeat
   background-position: 7em 11em
   +background-size(40%)
+  +breakpoint($break-tablet)
+    background-image: url("../images/bg-header-small.png")
+    background-position: center bottom
+    background-size: contain
 
 .wrapper-about
   position: relative
@@ -126,6 +134,13 @@
   &:after
     bottom: -60px
     background: url('../images/pattern-blue-bottom.png') top left repeat-x
+  h2
+    +breakpoint($break-mobile)
+      font-size: 22px
+
+.about-mobile-hide
+  +breakpoint($break-mobile)
+    display: none
 
 .map-cities
   margin: 1em 0
@@ -136,6 +151,8 @@
     margin-bottom: 5px
     max-width: 200px
     width: 100%
+    +breakpoint($break-tablet)
+    max-width: 100px
   p
     color: $gray-dark
 
@@ -148,7 +165,26 @@
 .section-schedule .row
   position: relative
   +breakpoint($break-tablet)
-    padding-bottom: 10em
+    padding-bottom: 0
+
+.section-unlimited,
+.section-schedule,
+.section-commitment
+  .col-md-5
+    +breakpoint($break-mobile)
+      padding-top: 130px
+      margin-top: 1em
+
++breakpoint($break-mobile)
+  .section-commitment .col-md-5
+    background: url('../images/commitment.png') top center no-repeat
+    +background-size(150px)
+  .section-schedule .col-md-5
+    background: url('../images/topclasses.png') top center no-repeat
+    +background-size(150px)
+  .section-unlimited .col-md-5
+    background: url('../images/static-unlimited.png') top center no-repeat
+    +background-size(150px)
 
 .cta
   margin-top: 2em
@@ -177,6 +213,13 @@
 .img-schedule
   margin: 10em 0 0
   text-align: center
+  +breakpoint($break-tablet)
+    margin: 2em auto 0
+  img
+    width: 100%
+    max-width: 281px
+    +breakpoint($break-tablet)
+      width: 70%
 
 .img-commit
   position: relative
@@ -185,6 +228,11 @@
   img
     display: block
     margin: 8em auto 0
+    width: 100%
+    max-width: 251px
+    +breakpoint($break-tablet)
+      margin: 2em auto 0
+      width: 60%
 
 .img-unlimited
   position: relative
@@ -193,11 +241,21 @@
   max-width: 483px
   +breakpoint($break-tablet)
     top: auto
+  +breakpoint($break-tablet)
+    width: 70%
+
+.img-unlimited-bg
+  width: 100%
 
 .img-unlimited-icon
+  display: block
+  margin: auto
   position: absolute
-  top: 155px
-  left: 142px
+  top: 0px
+  right: -4%
+  left: 0px
+  bottom: -7%
+  width: 45%
 
 .header-details
   color: #aaaaaa
