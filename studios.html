@@ -23,12 +23,12 @@
   <div class="section section-nav">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-xs-6"><a href="/"><img class="logo" src="images/logo.png" alt="Trimpass"></a></div>
-        <div class="col-md-9 col-xs-6 text-right">
+        <div class="col-md-3 col-sm-12"><a href="/"><img class="logo" src="images/logo.png" alt="Trimpass"></a></div>
+        <div class="col-md-9 col-sm-12">
           <ul class="list-inline main-menu">
-            <li><a href="home.html" class="text-uppercase"><span class="md md-lg md-home">&nbsp;</span>Home</a></li>
+            <li><a href="home.html" class="active text-uppercase"><span class="md md-lg md-home">&nbsp;</span>Home</a></li>
             <li><a href="classes.html" class="text-uppercase"><span class="md md-lg md-directions-bike">&nbsp;</span>Classes</a></li>
-            <li><a href="studios.html" class="active text-uppercase"><span class="md md-lg md-store">&nbsp;</span>Studios</a></li>
+            <li><a href="studios.html" class="text-uppercase"><span class="md md-lg md-store">&nbsp;</span>Studios</a></li>
             <li><a href="account.html" class="text-uppercase"><span class="md md-lg md-account-box">&nbsp;</span>Account</a></li>
           </ul>
         </div>
@@ -42,27 +42,33 @@
         <div class="col-md-6">
           <h1>Find a Studio</h1>
         </div>
-        <div class="col-md-6 text-right">
-          <p><span class="text-muted">Today is</span> <strong>Friday March 20, 2015</strong></p>
+        <div class="col-md-6">
+          <p class="today-date"><span class="text-muted">Today is</span> <strong>Friday March 20, 2015</strong></p>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="section-studio-filter">
+  <div class="section-classes-filter">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <label for="activities">Activities</label>
-          <input type="text" class="form-control form-control-activities">
+          <div class="form-activities">
+            <label for="activities">Activities</label>
+            <input type="text" class="form-control">
+          </div>
         </div>
         <div class="col-md-4">
-          <label for="neighborhoods">Neighborhoods</label>
-          <input type="text" class="form-control form-control-neighborhoods">
+          <div class="form-neighborhoods">
+            <label for="neighborhoods">Neighborhoods</label>
+            <input type="text" class="form-control">
+          </div>
         </div>
         <div class="col-md-4">
-          <label for="studios">Studios</label>
-          <input type="text" class="form-control form-control-studios">
+          <div class="form-studios">
+            <label for="studios">Studios</label>
+            <input type="text" class="form-control">
+          </div>
         </div>
       </div>
     </div>
@@ -97,7 +103,7 @@
                   <p class="text-muted">Downtown</p>
                   <div><strong>Shakes</strong></div>
                   <div class="text-muted">Lisa Rob</div>
-                  <div class="text-muted">6pm - 7pm</div>
+                  <p class="text-muted">6pm - 7pm</p>
                 </div>
                 <div class="col-md-6">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, perspiciatis quae repudiandae velit. Tempora in architecto ad fugiat consequuntur itaque quod eum obcaecati suscipit, recusandae non culpa, nemo ullam corporis.</p>

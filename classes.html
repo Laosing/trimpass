@@ -23,11 +23,11 @@
   <div class="section section-nav">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-xs-6"><a href="/"><img class="logo" src="images/logo.png" alt="Trimpass"></a></div>
-        <div class="col-md-9 col-xs-6 text-right">
+        <div class="col-md-3 col-sm-12"><a href="/"><img class="logo" src="images/logo.png" alt="Trimpass"></a></div>
+        <div class="col-md-9 col-sm-12">
           <ul class="list-inline main-menu">
-            <li><a href="home.html" class="text-uppercase"><span class="md md-lg md-home">&nbsp;</span>Home</a></li>
-            <li><a href="classes.html" class="active text-uppercase"><span class="md md-lg md-directions-bike">&nbsp;</span>Classes</a></li>
+            <li><a href="home.html" class="active text-uppercase"><span class="md md-lg md-home">&nbsp;</span>Home</a></li>
+            <li><a href="classes.html" class="text-uppercase"><span class="md md-lg md-directions-bike">&nbsp;</span>Classes</a></li>
             <li><a href="studios.html" class="text-uppercase"><span class="md md-lg md-store">&nbsp;</span>Studios</a></li>
             <li><a href="account.html" class="text-uppercase"><span class="md md-lg md-account-box">&nbsp;</span>Account</a></li>
           </ul>
@@ -42,8 +42,8 @@
         <div class="col-md-6">
           <h1>Find Classes to Join</h1>
         </div>
-        <div class="col-md-6 text-right">
-          <p><span class="text-muted">Today is</span> <strong>Friday March 20, 2015</strong></p>
+        <div class="col-md-6">
+          <p class="today-date"><span class="text-muted">Today is</span> <strong>Friday March 20, 2015</strong></p>
         </div>
       </div>
     </div>
@@ -52,27 +52,35 @@
   <div class="section section-classes-filter">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
-          <label for="time">Time</label>
-          <div class="form-inline">
-            <div class="form-group">
-              <input type="text" class="form-control form-control-time">
-              <span>To</span>
-              <input type="text" class="form-control form-control-time">
+        <div class="col-md-3 col-sm-6">
+          <div class="form-time">
+            <label for="time">Time</label>
+            <div class="form-inline">
+              <div class="form-group clearfix">
+                <input type="text" class="form-control">
+                <span>To</span>
+                <input type="text" class="form-control">
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <label for="activities">Activities</label>
-          <input type="text" class="form-control form-control-activities">
+        <div class="col-md-3 col-sm-6">
+          <div class="form-activities">
+            <label for="activities">Activities</label>
+            <input type="text" class="form-control">
+          </div>
         </div>
-        <div class="col-md-3">
-          <label for="neighborhoods">Neighborhoods</label>
-          <input type="text" class="form-control form-control-neighborhoods">
+        <div class="col-md-3 col-sm-6">
+          <div class="form-neighborhoods">
+            <label for="neighborhoods">Neighborhoods</label>
+            <input type="text" class="form-control">
+          </div>
         </div>
-        <div class="col-md-3">
-          <label for="studios">Studios</label>
-          <input type="text" class="form-control form-control-studios">
+        <div class="col-md-3 col-sm-6">
+          <div class="form-studios">
+            <label for="studios">Studios</label>
+            <input type="text" class="form-control">
+          </div>
         </div>
       </div>
     </div>
@@ -109,9 +117,9 @@
                 <h3>Core Flow</h3>
                 <p class="text-muted">Downtown</p>
               </div>
-              <p><strong>Shakes</strong></p>
-              <p class="text-muted">Lisa Rob</p>
-              <p class="text-muted">6pm - 7pm</p>
+              <div><strong>Shakes</strong></div>
+              <div class="text-muted">Lisa Rob</div>
+              <div class="text-muted">6pm - 7pm</div>
             </div>
             <div class="caption-categories">
               Strength, Yoga, Dance
@@ -131,9 +139,9 @@
                 <h3>Core Flow</h3>
                 <p class="text-muted">Downtown</p>
               </div>
-              <p><strong>Shakes</strong></p>
-              <p class="text-muted">Lisa Rob</p>
-              <p class="text-muted">6pm - 7pm</p>
+              <div><strong>Shakes</strong></div>
+              <div class="text-muted">Lisa Rob</div>
+              <div class="text-muted">6pm - 7pm</div>
             </div>
             <div class="caption-categories">
               Strength, Yoga, Dance
@@ -153,9 +161,9 @@
                 <h3>Core Flow</h3>
                 <p class="text-muted">Downtown</p>
               </div>
-              <p><strong>Shakes</strong></p>
-              <p class="text-muted">Lisa Rob</p>
-              <p class="text-muted">6pm - 7pm</p>
+              <div><strong>Shakes</strong></div>
+              <div class="text-muted">Lisa Rob</div>
+              <div class="text-muted">6pm - 7pm</div>
             </div>
             <div class="caption-categories">
               Strength, Yoga, Dance
@@ -175,99 +183,9 @@
                 <h3>Core Flow</h3>
                 <p class="text-muted">Downtown</p>
               </div>
-              <p><strong>Shakes</strong></p>
-              <p class="text-muted">Lisa Rob</p>
-              <p class="text-muted">6pm - 7pm</p>
-            </div>
-            <div class="caption-categories">
-              Strength, Yoga, Dance
-            </div>
-            <div class="clearfix caption-links">
-              <a href="#" class="btn btn-primary btn-block"><strong>Reserve</strong></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <div class="thumbnail-img">
-              <img src="http://placehold.it/261x200">
-            </div>
-            <div class="caption">
-              <div class="caption-head">
-                <h3>Core Flow</h3>
-                <p class="text-muted">Downtown</p>
-              </div>
-              <p><strong>Shakes</strong></p>
-              <p class="text-muted">Lisa Rob</p>
-              <p class="text-muted">6pm - 7pm</p>
-            </div>
-            <div class="caption-categories">
-              Strength, Yoga, Dance
-            </div>
-            <div class="clearfix caption-links">
-              <a href="#" class="btn btn-primary btn-block"><strong>Reserve</strong></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <div class="thumbnail-img">
-              <img src="http://placehold.it/261x200">
-            </div>
-            <div class="caption">
-              <div class="caption-head">
-                <h3>Core Flow</h3>
-                <p class="text-muted">Downtown</p>
-              </div>
-              <p><strong>Shakes</strong></p>
-              <p class="text-muted">Lisa Rob</p>
-              <p class="text-muted">6pm - 7pm</p>
-            </div>
-            <div class="caption-categories">
-              Strength, Yoga, Dance
-            </div>
-            <div class="clearfix caption-links">
-              <a href="#" class="btn btn-primary btn-block"><strong>Reserve</strong></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <div class="thumbnail-img">
-              <img src="http://placehold.it/261x200">
-            </div>
-            <div class="caption">
-              <div class="caption-head">
-                <h3>Core Flow</h3>
-                <p class="text-muted">Downtown</p>
-              </div>
-              <p><strong>Shakes</strong></p>
-              <p class="text-muted">Lisa Rob</p>
-              <p class="text-muted">6pm - 7pm</p>
-            </div>
-            <div class="caption-categories">
-              Strength, Yoga, Dance
-            </div>
-            <div class="clearfix caption-links">
-              <a href="#" class="btn btn-primary btn-block"><strong>Reserve</strong></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-3">
-          <div class="thumbnail">
-            <div class="thumbnail-img">
-              <img src="http://placehold.it/261x200">
-            </div>
-            <div class="caption">
-              <div class="caption-head">
-                <h3>Core Flow</h3>
-                <p class="text-muted">Downtown</p>
-              </div>
-              <p><strong>Shakes</strong></p>
-              <p class="text-muted">Lisa Rob</p>
-              <p class="text-muted">6pm - 7pm</p>
+              <div><strong>Shakes</strong></div>
+              <div class="text-muted">Lisa Rob</div>
+              <div class="text-muted">6pm - 7pm</div>
             </div>
             <div class="caption-categories">
               Strength, Yoga, Dance

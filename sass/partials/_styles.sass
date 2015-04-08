@@ -4,6 +4,9 @@
 
 .not-front
   background: $white-dark
+  h1
+    +breakpoint($break-mobile)
+      font-size: 30px
 
 .section
   position: relative
@@ -13,18 +16,22 @@
 .section-footer,
   margin: 0
   padding: 3em 0
-  +breakpoint($break-mobile)
-    padding: 1em 0
+  +breakpoint($break-tablet)
+    padding: 2em 0 1em
 
 .not-front .section-nav
   background: $white
   border-bottom: 1px solid $gray-light
+  +breakpoint($break-tablet)
+    text-align: center
 
 .section-banner
   height: 283px
   width: 100%
   background: url('../images/welcome-banner.jpg') center no-repeat
   +background-size(cover)
+  +breakpoint($break-tablet)
+    height: 50px
 
 .section-user
   .row
@@ -272,11 +279,19 @@
 
 .main-menu
   margin-top: .5em
+  text-align: right
+  +breakpoint($break-tablet)
+    text-align: center
+    margin-top: 2em
+  li
+    +breakpoint($break-mobile)
+      padding: .5em 0
   a
     color: $gray-dark
     font-weight: bold
     text-decoration: none
     margin: 0 1.5em
+
     &.active,
     &:hover
       color: $primary
@@ -292,6 +307,16 @@
 .user-details li,
 .user-menu a
   padding: 2em 1em
+  +breakpoint($break-mobile)
+    padding: 1em
+
+.user-details
+  text-align: right
+
+.user-menu,
+.user-details
+  +breakpoint($break-mobile)
+    text-align: center
 
 .thumbnail
   position: relative
@@ -300,7 +325,7 @@
   img
     width: 100%
   h3
-    margin: 2px 0 0
+    margin: 2px 0 10px
     text-transform: uppercase
     font-weight: bold
     font-size: 20px
@@ -313,34 +338,33 @@
 
 .caption-categories
   margin-top: 10px
-  margin-bottom: -1px
   font-weight: bold
-  border: 1px solid $gray-light
+  border-top: 1px solid $gray-light
   background: $white-dark
 
 .caption-padding
   padding: 1.5em
 
-.thumbnail-img
-  height: 200px
-  width: 100%
-  overflow: hidden
-
-.thumbnail-overflow
-  position: relative
-  height: 192px
-  overflow: hidden
-  img
-    position: absolute
-    top: 0
-    left: 0
-    width: auto
-    height: 100%
-
 // Classes
 
-.form-inline .form-control.form-control-time
-  width: 44%
+.form-time
+  +breakpoint($break-mobile)
+    span
+      margin: 5px
+      +inline-block
+      float: left
+  input.form-control
+    width: 44%
+    +breakpoint($break-mobile)
+      float: left
+
+.section-classes-filter label
+  margin-top: 10px
+
+.today-date
+  text-align: right
+  +breakpoint($break-tablet)
+    text-align: initial
 
 // Studio Details
 
