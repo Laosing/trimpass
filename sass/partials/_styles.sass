@@ -69,10 +69,6 @@
   +breakpoint($break-mobile)
     display: block
 
-.homepage-signup
-  +breakpoint($break-mobile)
-    display: none
-
 .img-front-header
   position: absolute
   top: 0
@@ -172,9 +168,6 @@
     max-width: 100px
   p
     color: $gray-dark
-
-.section-signup
-  margin: 4em 0
 
 .section-footer
   color: $black-light
@@ -298,7 +291,8 @@
   text-align: center
   +border-radius()
   +breakpoint($break-mobile)
-    margin: 1em 0
+    margin: 5px 0
+    padding: 10px
   &.active
     color: $white
     background: $primary
@@ -306,6 +300,7 @@
       border-color: $primary-dark
   h2
     margin-top: 0
+    font-size: 18px
   ul
     min-height: 140px
     padding: 1em 0
@@ -314,12 +309,15 @@
     border-top: 1px solid $gray
     +breakpoint($break-mobile)
       min-height: initial
+      display: none
     li
       list-style-type: none
       margin: .5em 0
 
 .signup-box-price
   font-size: 40px
+  +breakpoint($break-mobile)
+    font-size: 25px
 
 // Logged In Page
 
