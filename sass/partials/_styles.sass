@@ -164,6 +164,9 @@
   p
     color: $gray-dark
 
+.section-signup
+  margin: 4em 0
+
 .section-footer
   color: $black-light
   font-size: 12px
@@ -274,6 +277,35 @@
   width: 100%
   height: 450px
   pointer-events: none
+
+.signup-box
+  margin: 2em 0
+  width: 100%
+  border: 2px solid $primary
+  padding: 1em
+  text-align: center
+  +border-radius()
+  +breakpoint($break-mobile)
+    margin: 1em 0
+  &.active
+    color: $white
+    background: $primary
+    ul
+      border-color: $primary-dark
+  h2
+    margin-top: 0
+  ul
+    min-height: 140px
+    padding: 1em 0
+    margin: 1em 0
+    text-align: left
+    border-top: 1px solid $gray
+    li
+      list-style-type: none
+      margin: .5em 0
+
+.signup-box-price
+  font-size: 40px
 
 // Logged In Page
 
