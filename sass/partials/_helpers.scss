@@ -10,3 +10,7 @@
 .animate {
   @include transition(all 0.3s ease);
 }
+
+.strong {
+  font-weight: bold;
+}
