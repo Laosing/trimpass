@@ -63,6 +63,15 @@
     line-height: 1
     +breakpoint($break-mobile)
       font-size: 36px
+      margin-top: 1.5em
+      font-weight: bold
+  .btn
+    font-size: 30px
+    padding: .5em 1.3em
+    margin: 1em 0 10px
+
+.header-intro
+  font-size: 20px
 
 .homepage-mobile-btn
   display: none
@@ -115,22 +124,63 @@
   top: 115px
   left: 110px
 
+.how-it-works
+  position: relative
+  padding: 4em 0
+  color: $white
+  background: $primary
+  border-bottom: 1px solid $primary-dark
+  .number
+    padding: 5px 13.5px
+    margin-right: 10px
+    +inline-block
+    background: $primary-dark
+    border: 2px solid $white
+    +border-radius(100%)
+  .head
+    font-size: 20px
+  .works-group
+    +breakpoint($break-mobile)
+      text-align: center
+    .glyphicon
+      font-size: 50px
+      margin-bottom: .5em
+      margin-top: .5em
+
+.how-it-works-close
+  position: absolute
+  top: 0
+  right: 0
+  font-size: 20px
+  padding: 20px
+  color: $primary-darker
+  &:hover
+    color: $primary-dark
+
+.facebook-divider
+  position: relative
+  p
+    position: absolute
+    top: -9px
+    left: 48%
+    background: white
+    padding: 0 1em
+
 .wrapper-intro
   position: relative
   height: 100%
-  min-height: 470px
+  min-height: 600px
   background-image: url('../images/bg-header.jpg')
   background-repeat: no-repeat
   background-position: 7em 11em
   +background-size(40%)
   +breakpoint($break-tablet)
-    background-image: url("../images/bg-header-small.png")
-    background-position: center bottom
-    background-size: contain
+    background: none
+    min-height: 470px
 
 .wrapper-about
   position: relative
-  top: -60px
+  top: -62px
   margin: 62px 0
   padding: 60px 0
   background: $primary
@@ -269,11 +319,6 @@
   left: 0px
   bottom: -7%
   width: 45%
-
-.header-details
-  color: #aaaaaa
-  +breakpoint($break-tablet)
-    color: $black-light
 
 .map
   width: 100%

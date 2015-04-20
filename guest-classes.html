@@ -1,0 +1,294 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TrimPass</title>
+  <meta name="description" content="Unlimited access to fitness classes and gyms throughout your city for one low price.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="section section-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-4 col-md-4 col-xs-6 text-center"><a href="/"><img class="logo" src="images/logo.png" alt="Trimpass"></a></div>
+        <div class="col-md-4 col-xs-6 text-right"><a href="home.html" class="btn btn-default">Log In</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Sign up to reserve your class</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Location</label>
+              <div class="col-sm-10">
+                <select class="form-control">
+                  <option>London, ON</option>
+                  <option>Toronto, ON</option>
+                  <option>Other - Coming Soon</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+          </form>
+          <div class="facebook-divider">
+            <hr>
+            <p class="strong text-center">OR</p>
+          </div>
+          <a href="#" class="btn btn-block btn-social btn-lg btn-facebook"><span class="fa fa-facebook"></span>Sign in with Facebook</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <a href="signup.html" type="button" class="btn btn-primary">Continue</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section section-classes">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading"><h1 class="panel-title">Find a Class</h1></div>
+            <table class="schedule-table table table-hover table-condensed">
+              <thead>
+                <tr>
+                  <th>Class</th>
+                  <th>Time</th>
+                  <th>Activities</th>
+                  <th>Instructor</th>
+                  <th>Availability</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Shakes</td>
+                  <td>Thu 3/13, 1:00pm-2:00pm</td>
+                  <td>Dance</td>
+                  <td>Amy Aravatos</td>
+                  <td><a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Yoga Hero</td>
+                  <td>Thu 3/13, 3:00pm-4:00pm</td>
+                  <td>Yoga</td>
+                  <td>John Smith</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Dance Dance</td>
+                  <td>Thu 3/13, 5:00pm-6:00pm</td>
+                  <td>Dance, Strength Training</td>
+                  <td>Tony Jr</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Training</td>
+                  <td>Thu 3/13, 6:00pm-7:00pm</td>
+                  <td>Strength Training</td>
+                  <td>Matt Yolmn</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Shakes</td>
+                  <td>Thu 3/13, 1:00pm-2:00pm</td>
+                  <td>Dance</td>
+                  <td>Amy Aravatos</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Yoga Hero</td>
+                  <td>Thu 3/13, 3:00pm-4:00pm</td>
+                  <td>Yoga</td>
+                  <td>John Smith</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Dance Dance</td>
+                  <td>Thu 3/13, 5:00pm-6:00pm</td>
+                  <td>Dance, Strength Training</td>
+                  <td>Tony Jr</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Training</td>
+                  <td>Thu 3/13, 6:00pm-7:00pm</td>
+                  <td>Strength Training</td>
+                  <td>Matt Yolmn</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Shakes</td>
+                  <td>Thu 3/13, 1:00pm-2:00pm</td>
+                  <td>Dance</td>
+                  <td>Amy Aravatos</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Yoga Hero</td>
+                  <td>Thu 3/13, 3:00pm-4:00pm</td>
+                  <td>Yoga</td>
+                  <td>John Smith</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Dance Dance</td>
+                  <td>Thu 3/13, 5:00pm-6:00pm</td>
+                  <td>Dance, Strength Training</td>
+                  <td>Tony Jr</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Training</td>
+                  <td>Thu 3/13, 6:00pm-7:00pm</td>
+                  <td>Strength Training</td>
+                  <td>Matt Yolmn</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Shakes</td>
+                  <td>Thu 3/13, 1:00pm-2:00pm</td>
+                  <td>Dance</td>
+                  <td>Amy Aravatos</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Yoga Hero</td>
+                  <td>Thu 3/13, 3:00pm-4:00pm</td>
+                  <td>Yoga</td>
+                  <td>John Smith</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Dance Dance</td>
+                  <td>Thu 3/13, 5:00pm-6:00pm</td>
+                  <td>Dance, Strength Training</td>
+                  <td>Tony Jr</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Training</td>
+                  <td>Thu 3/13, 6:00pm-7:00pm</td>
+                  <td>Strength Training</td>
+                  <td>Matt Yolmn</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Shakes</td>
+                  <td>Thu 3/13, 1:00pm-2:00pm</td>
+                  <td>Dance</td>
+                  <td>Amy Aravatos</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Yoga Hero</td>
+                  <td>Thu 3/13, 3:00pm-4:00pm</td>
+                  <td>Yoga</td>
+                  <td>John Smith</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Dance Dance</td>
+                  <td>Thu 3/13, 5:00pm-6:00pm</td>
+                  <td>Dance, Strength Training</td>
+                  <td>Tony Jr</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Training</td>
+                  <td>Thu 3/13, 6:00pm-7:00pm</td>
+                  <td>Strength Training</td>
+                  <td>Matt Yolmn</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Shakes</td>
+                  <td>Thu 3/13, 1:00pm-2:00pm</td>
+                  <td>Dance</td>
+                  <td>Amy Aravatos</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Yoga Hero</td>
+                  <td>Thu 3/13, 3:00pm-4:00pm</td>
+                  <td>Yoga</td>
+                  <td>John Smith</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Dance Dance</td>
+                  <td>Thu 3/13, 5:00pm-6:00pm</td>
+                  <td>Dance, Strength Training</td>
+                  <td>Tony Jr</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+                <tr>
+                  <td>Training</td>
+                  <td>Thu 3/13, 6:00pm-7:00pm</td>
+                  <td>Strength Training</td>
+                  <td>Matt Yolmn</td>
+                  <td><a href="#" class="btn btn-primary btn-sm">Reserve</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section section-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="list-inline text-center">
+            <li><a href="#" class="symbol" title="twitterbird"></a></li>
+            <li><a href="#" class="symbol" title="facebook"></a></li>
+            <li><a href="#" class="symbol" title="circleyoutube"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">&copy; Copyright 2015 Trimpass. All rights reserved</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+  <script src="js/libs/scrollReveal.min.js"></script>
+  <script>window.sr = new scrollReveal({ mobile: false });</script>
+  <script src="js/scripts.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+</body>
+</html>

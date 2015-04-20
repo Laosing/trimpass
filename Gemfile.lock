@@ -32,6 +32,8 @@ GEM
     eventmachine (1.0.7)
     execjs (2.4.0)
     ffi (1.9.8)
+    font-awesome-sass (4.3.2.1)
+      sass (~> 3.2)
     formatador (0.2.5)
     guard (2.2.5)
       formatador (>= 0.2.4)
@@ -81,6 +83,7 @@ DEPENDENCIES
   bootstrap-sass
   breakpoint (~> 2.0.2)
   compass
+  font-awesome-sass
   guard (~> 2.2.4)
   guard-bundler (~> 2.0.0)
   guard-compass (~> 1.0.0)

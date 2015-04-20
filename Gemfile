@@ -4,6 +4,7 @@ group :assets do
   gem 'sass'
   gem 'compass'
   gem 'bootstrap-sass'
+  gem 'font-awesome-sass'
 end
 
 group :development do
