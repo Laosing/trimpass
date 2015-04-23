@@ -54,9 +54,13 @@
 
 .section-front-header
   margin: .1em 0 10em
+  text-align: center
+  color: $white
   +breakpoint($break-tablet)
     margin: 0 auto
     text-align: center
+  a
+    color: $white
   h1
     font-size: 70px
     margin: .5em 0px 16px
@@ -97,6 +101,14 @@
   width: 100%
   height: 100%
   +background-image(linear-gradient(white, transparent, white))
+
+.video
+  position: absolute
+  bottom: 0
+  height: 100%
+  z-index: -100
+  background: url(../images/video/demo.png) no-repeat
+  background-size: cover
 
 .logo
   max-width: 250px
@@ -168,9 +180,11 @@
 
 .wrapper-intro
   position: relative
+  overflow: hidden
   height: 100%
   min-height: 600px
-  background-image: url('../images/bg-header.jpg')
+  // background-image: url('../images/bg-header.jpg')
+  background: transparentize($black, .5)
   background-repeat: no-repeat
   background-position: 7em 11em
   +background-size(40%)
