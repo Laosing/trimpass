@@ -103,12 +103,13 @@
   +background-image(linear-gradient(white, transparent, white))
 
 .video
-  position: absolute
-  bottom: 0
-  width: 100%
-  z-index: -100
-  background: url(../images/video/demo.png) no-repeat
-  background-size: cover
+  display: none
+  +breakpoint($mobileWidth)
+    display: block
+    position: absolute
+    bottom: 0
+    width: 100%
+    z-index: -100
 
 .logo
   max-width: 250px
@@ -183,13 +184,11 @@
   overflow: hidden
   height: 100%
   min-height: 600px
-  // background-image: url('../images/bg-header.jpg')
-  background: transparentize($black, .5)
+  background: transparentize($black, .5) url(../images/video/demo.png)
+  background-size: cover
   background-repeat: no-repeat
-  background-position: 7em 11em
-  +background-size(40%)
-  +breakpoint($break-tablet)
-    background: none
+  +breakpoint($mobileWidth)
+    background: transparentize($black, .5)
     min-height: 470px
 
 .wrapper-about
