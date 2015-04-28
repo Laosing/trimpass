@@ -184,12 +184,24 @@
   overflow: hidden
   height: 100%
   min-height: 600px
-  background: transparentize($black, .5) url('../images/mobile-banner-1.jpg')
+  background: $black
+  +breakpoint($tabletWidth)
+    min-height: 470px
+    background: transparentize($black, .5)
+
+.banner-image
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  opacity: .5
+  background: url('../images/mobile-banner-2.jpg')
   background-size: cover
   background-repeat: no-repeat
-  +breakpoint($mobileWidth)
-    background: transparentize($black, .5)
-    min-height: 470px
+  background-position: center top
+  +breakpoint($tabletWidth)
+    display: none
 
 .wrapper-about
   position: relative
