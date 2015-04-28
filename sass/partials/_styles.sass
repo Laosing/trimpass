@@ -54,15 +54,28 @@
 
 .section-front-header
   margin: .1em 0 10em
+  text-align: center
+  color: $white
   +breakpoint($break-tablet)
     margin: 0 auto
     text-align: center
+  a
+    color: $white
   h1
     font-size: 70px
     margin: .5em 0px 16px
     line-height: 1
     +breakpoint($break-mobile)
       font-size: 36px
+      margin-top: 1.5em
+      font-weight: bold
+  .btn
+    font-size: 30px
+    padding: .5em 1.3em
+    margin: 1em 0 10px
+
+.header-intro
+  font-size: 20px
 
 .homepage-mobile-btn
   display: none
@@ -88,6 +101,15 @@
   width: 100%
   height: 100%
   +background-image(linear-gradient(white, transparent, white))
+
+.video
+  display: none
+  +breakpoint($mobileWidth)
+    display: block
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: -100
 
 .logo
   max-width: 250px
@@ -115,22 +137,75 @@
   top: 115px
   left: 110px
 
+.how-it-works
+  position: relative
+  padding: 4em 0
+  color: $white
+  background: $primary
+  border-bottom: 1px solid $primary-dark
+  .number
+    padding: 5px 13.5px
+    margin-right: 10px
+    +inline-block
+    background: $primary-dark
+    border: 2px solid $white
+    +border-radius(100%)
+  .head
+    font-size: 20px
+  .works-group
+    +breakpoint($break-mobile)
+      text-align: center
+    .glyphicon
+      font-size: 50px
+      margin-bottom: .5em
+      margin-top: .5em
+
+.how-it-works-close
+  position: absolute
+  top: 0
+  right: 0
+  font-size: 20px
+  padding: 20px
+  color: $primary-darker
+  &:hover
+    color: $primary-dark
+
+.facebook-divider
+  position: relative
+  p
+    position: absolute
+    top: -9px
+    left: 48%
+    background: white
+    padding: 0 1em
+
 .wrapper-intro
   position: relative
+  overflow: hidden
   height: 100%
-  min-height: 470px
-  background-image: url('../images/bg-header.jpg')
+  min-height: 600px
+  background: $black
+  +breakpoint($tabletWidth)
+    min-height: 470px
+    background: transparentize($black, .5)
+
+.banner-image
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  opacity: .5
+  background: url('../images/mobile-banner-2.jpg')
+  background-size: cover
   background-repeat: no-repeat
-  background-position: 7em 11em
-  +background-size(40%)
-  +breakpoint($break-tablet)
-    background-image: url("../images/bg-header-small.png")
-    background-position: center bottom
-    background-size: contain
+  background-position: center top
+  +breakpoint($tabletWidth)
+    display: none
 
 .wrapper-about
   position: relative
-  top: -60px
+  top: -62px
   margin: 62px 0
   padding: 60px 0
   background: $primary
@@ -269,11 +344,6 @@
   left: 0px
   bottom: -7%
   width: 45%
-
-.header-details
-  color: #aaaaaa
-  +breakpoint($break-tablet)
-    color: $black-light
 
 .map
   width: 100%
